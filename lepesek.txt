@@ -1,0 +1,73 @@
+Attributes:
+Fizikum: FIZ
+Reflex: REF
+Intelektus :INT
+Vonzerő: VON 
+Megérzés: MEG
+
+
+
+Amikor támadásba lendülsz felkészült ellenség(ek) ellenség
+dobj: +FIZ/REF
+  10+: Válassz kettőt
+  7-9: válassz egyet
+    - Az ellensél nem tud megsebezni
+    - A támadásod egyszerre több ellenfelet is eltalál
+    - A támadási tag-ed eggyel magasabbnak kezelendő
+    - A támadásod nem használ el töltényt
+
+ amikor egy feléd irányuló veszélyre fel akarsz készülni
+dobj: +FIZ 
+  10+: hold 3
+  7-9: hold 1
+  - Suffer an attack's damage/effects instead of your ward
+  - Halve an attack’s damage/effects
+  - Draw all attention from your ward to yourself
+  - Strike back at an attacker (deal damage, with lesser damage tag) 
+  
+Amikor szeretnéd az intelektuális tudásodat kiterjeszteni a szituációra: 
+dobj: +INT
+  10+: A GM elmond mindent amit tudhatsz az adott szituációról, és érdekes lehet számotokra.
+  7-9: A GM kiválaszt egyet a szituációhoz kapcsolódó információt, mely hasznos lehet számotokra.
+
+Amikor szeretnél valamit elérni egy NPC-nél, és van okuk védekezni ellene:
+Dobj:
+  10+: Megcsinálja amit kérsz, vagy megmondják egyből a legkönnyebb utat a szívükhöz
+  7-9: Nem feltétlen csinálják meg egyből, elmondják mit várnak cserébe.
+
+Amikor valamilyen testi vagy mentális megpróbáltatás előtt találod magad, 
+dob: 
+    +FIZ: A testi erőd használod fel
+    +REF: A reflexeidre hagyatkozol
+    +INT: A szituációt felméred, és inteligenciád használod kivánt
+    +VON: A vonzerőd használod fel
+    +MEG: A megérzésedre hagyatkozol, és cselekszel
+  10+: Minden probléma nélkül kijössz a veszélyből
+  7-9: Sikerül túljutnod a vesészélyen, de valami komplikáció fellépet közben.
+
+Amikor a hálozatot hívod segítségül:
+az s a spike-ot jelenti
+dobj: +ARCH
+  10+: Nincs semmi koplikáció, minden úgy történik, ahogy azt szeretted volna.
+  7-9: Sikeres vagy, de Válassz a listából 1-et: 
+  6-: Válassz a listából spike szamut a listából, vagy bízd a GM-re a következményeket és noveld a spike merod: 
+    - Elveszíted a hálózat ritmusát, időre van szükséged, hogy újra megtaláld. -s a következő varazs dobásra
+    - A varázslatod rossz célpontot talált el. 
+    - Az egész tested beleremeg, dobj sd4 armoron áthatoló sebzést. 
+    - A varazslatod sikertelen volt, noveled a spikeok szamat. 
+
+Amikor a megérzéseidre hagyatkozol a szituációban: 
+Tegyél föl egy kérdést és 
+dobj: +MEG
+  10+: A megérzésed ma sem csap be, a GM egy mondatban válaszol.
+  7-9: Nem vagy annyira biztos önmagadban, a GM 1 szóban válaszol.
+
+
+Amikor olyan eseményben veszel részt, ahol minden a szerencsén múlik:
+dobj: +MEG
+  10+: A szerencse a te oldaladra állt a mai napon. 
+  7-9: Szerencsés voltál, de egy hajszálon múlott. Válassz egyet a listából: 
+    - A kivánt eredménynek pusztán a felét kapod meg
+    - A szerencse mulandó, a mai napra -1 minden következő luck dobásra
+    - akár, csalással vádolnak, akár csak nem nézik a sikered jó szemmel, a nyeremény a tied, de nem látnak itt döbbé szívesen.
+     

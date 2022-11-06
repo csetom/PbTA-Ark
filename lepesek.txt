@@ -7,7 +7,7 @@ Megérzés: MEG
 
 
 
-Amikor támadásba lendülsz felkészült ellenség(ek) ellenség
+Amikor támadásba lendülsz felkészült ellenség(ek) ellen
 dobj: +FIZ/REF
   10+: Válassz kettőt
   7-9: válassz egyet
